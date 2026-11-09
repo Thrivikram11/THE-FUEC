@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact THE FUEC for research, strategic development and partnership enquiries.">
+
+  <title>Contact | THE FUEC — FUTURE ECONOMY</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="firm.css">
+  <link rel="stylesheet" href="site.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<header class="navbar">
+  <a class="logo" href="index.html" aria-label="THE FUEC home">
+    <span>THE FUEC</span>
+    <small>FUTURE ECONOMY</small>
+  </a>
+
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav-links" aria-label="Main navigation">
+    <div class="nav-item dropdown firm-dropdown">
+      <a href="firm.html">The Firm <span class="arrow"></span></a>
+      <div class="dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="firm.html#purpose">Our Mission &amp; Vision</a>
+        <a href="firm.html#team">Our Team</a>
+      </div>
+    </div>
+
+    <div class="nav-item dropdown">
+      <a href="services.html">What We Do <span class="arrow"></span></a>
+      <div class="dropdown-menu">
+        <a href="services.html#transformation">Business Transformation</a>
+        <a href="services.html#startup-research">Startup Research</a>
+        <a href="services.html#strategic-development">Strategic Development</a>
+      </div>
+    </div>
+
+    <div class="nav-item dropdown">
+      <a href="insights.html">News &amp; Insights <span class="arrow"></span></a>
+      <div class="dropdown-menu">
+        <a href="insights.html">Research Reports</a>
+        <a href="insights.html">Industry Insights</a>
+      </div>
+    </div>
+
+    <div class="nav-item dropdown">
+      <a href="partners.html">Partners <span class="arrow"></span></a>
+      <div class="dropdown-menu">
+        <a href="partners.html">Research Partners</a>
+        <a href="contact.html">Work With Us</a>
+      </div>
+    </div>
+
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+    <button class="search-button" type="button" aria-label="Search (coming soon)">
+      <span class="search-icon"></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="contact-panel contact-page">
+
+    <div class="contact-intro">
+      <p class="eyebrow">CONTACT THE FUEC</p>
+
+      <h1>
+        Start a conversation.<br>
+        <em>Explore what comes next.</em>
+      </h1>
+
+      <p>
+        Whether you are developing a startup, exploring strategic
+        opportunities or looking to collaborate, we welcome your enquiry.
+      </p>
+    </div>
+
+    <div class="contact-form-wrap">
+
+      <div class="contact-form-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Send us an enquiry.</h2>
+        <p>Complete the form below and our team will review your message.</p>
+      </div>
+
+      <form id="contactForm" class="fuec-contact-form">
+
+        <div class="form-field">
+          <label for="full_name">Full Name <span>*</span></label>
+          <input
+            type="text"
+            id="full_name"
+            name="full_name"
+            placeholder="Enter your full name"
+            maxlength="100"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email Address <span>*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            maxlength="254"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="company_name">Company / Startup Name</label>
+          <input
+            type="text"
+            id="company_name"
+            name="company_name"
+            placeholder="Enter company or startup name"
+            maxlength="150"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="enquiry_type">Enquiry Type <span>*</span></label>
+          <select id="enquiry_type" name="enquiry_type" required>
+            <option value="">Select enquiry type</option>
+            <option value="Startup Research">Startup Research</option>
+            <option value="Strategic Development">Strategic Development</option>
+            <option value="Business Transformation">Business Transformation</option>
+            <option value="Research Collaboration">Research Collaboration</option>
+            <option value="Partnership">Partnership</option>
+            <option value="General Enquiry">General Enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter subject"
+            maxlength="200"
+          >
+        </div>
+
+        <div class="form-field form-field-full">
+          <label for="message">Your Message <span>*</span></label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Tell us how we can help..."
+            maxlength="5000"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-submit-area">
+          <button type="submit" id="contactSubmit">
+            Submit Enquiry <span>↗</span>
+          </button>
+
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="contact-email">
+      <p>Prefer email?</p>
+      <a href="mailto:hello@futureconmy.com">
+        hello@futureconmy.com ↗
+      </a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-logo">THE FUEC</div>
+
+  <p>FUTURE ECONOMY · Independent research &amp; strategic development.</p>
+
+  <a href="mailto:hello@futureconmy.com">Contact THE FUEC ↗</a>
+
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> THE FUEC. All rights reserved.</span>
+    <span>Research today. Shape tomorrow.</span>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie notice">
+  <button class="cookie-close" id="cookieClose" type="button" aria-label="Close cookie notice">×</button>
+
+  <div class="cookie-text">
+    <p>
+      By using this website, you agree to our use of optional first-party
+      and third-party cookies to enhance functionality and personalize
+      your experience, perform analytics, and serve you with relevant
+      content. You may manage your preferences at any time.
+    </p>
+  </div>
+
+  <div class="cookie-actions">
+    <button class="accept-button" id="acceptCookies" type="button">I Understand</button>
+    <button class="preferences-button" id="manageCookies" type="button">
+      ☷ &nbsp; Manage Cookie Preferences
+    </button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="cookieModal" aria-hidden="true">
+  <div class="cookie-modal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+    <button class="modal-close" id="closeCookieModal" type="button" aria-label="Close">×</button>
+
+    <p class="eyebrow">YOUR PRIVACY</p>
+    <h2 id="cookieModalTitle">Cookie preferences</h2>
+
+    <p>
+      You can choose whether to allow optional cookies.
+      Essential cookies are always enabled for basic website functions.
+    </p>
+
+    <div class="cookie-option">
+      <div>
+        <strong>Essential cookies</strong>
+        <small>Required for core website functions.</small>
+      </div>
+      <input type="checkbox" checked disabled aria-label="Essential cookies always enabled">
+    </div>
+
+    <div class="cookie-option">
+      <div>
+        <strong>Analytics cookies</strong>
+        <small>Help us understand how visitors use the website.</small>
+      </div>
+      <input type="checkbox" id="analyticsCookies">
+    </div>
+
+    <button class="accept-button save-preferences" id="saveCookiePreferences" type="button">
+      Save preferences
+    </button>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const SUPABASE_URL = "https://wmvgvxzazggrayvsnyng.supabase.co";
+
+  const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_9tLQ7DfGK_PWRrbiqwbCcw_rzp3SKed";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+  );
+
+  const form = document.getElementById("contactForm");
+  const submitButton = document.getElementById("contactSubmit");
+  const statusMessage = document.getElementById("formStatus");
+
+  if (!form) return;
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    statusMessage.textContent = "";
+    statusMessage.className = "form-status";
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Submitting...";
+
+    const formData = new FormData(form);
+
+    const enquiry = {
+      full_name: formData.get("full_name").trim(),
+      email: formData.get("email").trim(),
+      company_name: formData.get("company_name").trim() || null,
+      enquiry_type: formData.get("enquiry_type"),
+      subject: formData.get("subject").trim() || null,
+      message: formData.get("message").trim()
+    };
+
+    try {
+
+      const { error } = await supabaseClient
+        .from("contact_enquiries")
+        .insert([enquiry]);
+
+      if (error) {
+        throw error;
+      }
+
+      statusMessage.textContent =
+        "Thank you! Your enquiry has been submitted successfully.";
+
+      statusMessage.classList.add("success");
+
+      form.reset();
+
+    } catch (error) {
+
+      console.error("Contact form error:", error);
+
+      statusMessage.textContent =
+        "We couldn't submit your enquiry. Please try again or email hello@futureconmy.com.";
+
+      statusMessage.classList.add("error");
+
+    } finally {
+
+      submitButton.disabled = false;
+      submitButton.innerHTML = 'Submit Enquiry <span>↗</span>';
+
+    }
+
+  });
+
+});
+</script>
+
+</body>
+</html>

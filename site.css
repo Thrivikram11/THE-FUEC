@@ -1,0 +1,382 @@
+
+/* THE FUEC shared page additions */
+.logo{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:150px;padding:7px 10px 5px;line-height:1.05}
+.logo span{font-family:"Playfair Display",Georgia,serif;font-size:27px;letter-spacing:-.7px}
+.logo small{font-family:"DM Sans",sans-serif;font-size:8px;letter-spacing:2.4px;margin-top:5px}
+.page-intro{padding:115px 7.2% 100px;background:#f5f4ef;color:#171916;min-height:430px}
+.page-intro .eyebrow{color:#a88a5b}.page-intro h1{font:400 clamp(48px,7vw,92px)/1.04 "Playfair Display",Georgia,serif;max-width:900px;letter-spacing:-.045em}.page-intro h1 em{color:#a88a5b}.page-intro p:last-child{max-width:620px;color:#62645d;font-size:16px;line-height:1.9;margin-top:26px}
+.page-content{padding:90px 7.2%;background:#050505;color:#f5f3ef}.page-content h2{font:400 clamp(34px,4.5vw,58px)/1.15 "Playfair Display",Georgia,serif;max-width:850px}.page-content p{color:#b8b5b1;line-height:1.9;max-width:760px;margin-top:22px}.contact-panel{padding:100px 7.2%;background:#f5f4ef;color:#171916}.contact-panel h1{font:400 clamp(48px,7vw,86px)/1.1 "Playfair Display",Georgia,serif}.contact-panel p{max-width:620px;color:#62645d;line-height:1.9;margin-top:24px}.contact-panel a{display:inline-block;margin-top:30px;padding:15px 24px;background:#171916;color:white}
+@media(max-width:600px){.logo span{font-size:23px}.page-intro{padding:75px 6%}.page-content,.contact-panel{padding:70px 6%}}
+
+
+/* COMPANY COLLABORATIONS */
+.collaboration-hero{align-items:flex-end;min-height:390px;padding-top:100px;padding-bottom:90px}
+.collaboration-hero h2{max-width:760px;font-family:"Playfair Display",Georgia,serif;font-size:clamp(42px,5.3vw,72px);font-weight:400;line-height:1.12;letter-spacing:-.035em}
+.collaboration-lead{max-width:650px;margin-top:24px;color:#b8b5b1;font-size:16px;line-height:1.9}
+.zlaqa-section{padding:25px 7.2% 110px;background:#050505}
+.zlaqa-card{display:grid;grid-template-columns:minmax(280px,.9fr) 1.1fr;align-items:center;gap:clamp(40px,7vw,100px);padding:clamp(28px,5vw,70px);border:1px solid rgba(255,255,255,.16);background:linear-gradient(135deg,#101010,#070707)}
+.zlaqa-logo-wrap{display:grid;place-items:center;min-height:300px;background:#000;border:1px solid rgba(255,255,255,.08)}
+.zlaqa-logo{display:block;width:min(100%,320px);height:auto;object-fit:contain}
+.zlaqa-copy h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,4.2vw,58px);font-weight:400;line-height:1.12;letter-spacing:-.03em}
+.zlaqa-copy>p:not(.eyebrow){margin-top:24px;color:#b8b5b1;font-size:15px;line-height:1.95}
+.zlaqa-copy .collaboration-note{padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:13px!important;color:#918d87!important}
+.collaboration-contact{padding-top:85px;padding-bottom:100px;border-top:1px solid rgba(255,255,255,.12)}
+.collaboration-contact h2{font-size:clamp(38px,4.5vw,60px)}
+.collaboration-contact a{display:inline-block;margin-top:8px;padding-bottom:7px;border-bottom:1px solid #a88a5b}
+@media(max-width:800px){.collaboration-hero{display:block;padding-top:75px;padding-bottom:65px}.collaboration-hero .explore-link{margin-top:28px}.zlaqa-section{padding:15px 6% 75px}.zlaqa-card{grid-template-columns:1fr;gap:34px;padding:24px}.zlaqa-logo-wrap{min-height:240px}.zlaqa-logo{width:min(80%,280px)}}
+
+/* =========================================
+   THE FUEC - PARTNERS PAGE REFINEMENTS
+   ========================================= */
+
+.collaboration-hero {
+    padding-left: 7.2%;
+    padding-right: 7.2%;
+}
+
+.collaboration-hero h2 {
+    max-width: 780px;
+    color: #f5f3ef;
+}
+
+.collaboration-lead {
+    max-width: 620px;
+    color: #b8b5b1;
+}
+
+.zlaqa-section {
+    padding-top: 35px;
+    padding-bottom: 115px;
+}
+
+.zlaqa-card {
+    max-width: 1320px;
+    margin: 0 auto;
+    gap: clamp(45px, 7vw, 105px);
+    border: 1px solid rgba(168, 138, 91, 0.35);
+    background: linear-gradient(125deg, #11120f, #070707 75%);
+    transition: border-color 0.3s ease;
+}
+
+.zlaqa-card:hover {
+    border-color: rgba(168, 138, 91, 0.7);
+}
+
+.zlaqa-logo-wrap {
+    min-height: 340px;
+    padding: 35px;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.zlaqa-logo {
+    width: min(100%, 350px);
+    max-height: 260px;
+    object-fit: contain;
+}
+
+.zlaqa-copy {
+    max-width: 620px;
+}
+
+.zlaqa-copy .eyebrow {
+    color: #a88a5b;
+    letter-spacing: 3px;
+    font-size: 10px;
+    margin-bottom: 22px;
+}
+
+.zlaqa-copy h1 {
+    color: #f5f3ef;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(38px, 4.2vw, 58px);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.zlaqa-copy > p:not(.eyebrow) {
+    color: #b8b5b1;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+.zlaqa-copy .collaboration-note {
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(168, 138, 91, 0.3);
+    color: #96928b !important;
+    font-size: 12px !important;
+}
+
+.collaboration-contact {
+    border-top: 1px solid rgba(168, 138, 91, 0.2);
+}
+
+.collaboration-contact .eyebrow {
+    color: #a88a5b;
+}
+
+.collaboration-contact h2 {
+    color: #f5f3ef;
+}
+
+.collaboration-contact a {
+    color: #d0b78d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.collaboration-contact a:hover {
+    color: #ffffff;
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 800px) {
+
+    .collaboration-hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .zlaqa-section {
+        padding: 20px 6% 75px;
+    }
+
+    .zlaqa-card {
+        gap: 35px;
+        padding: 25px;
+    }
+
+    .zlaqa-logo-wrap {
+        min-height: 260px;
+    }
+
+    .zlaqa-copy h1 {
+        font-size: clamp(35px, 8vw, 48px);
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .zlaqa-card {
+        padding: 18px;
+    }
+
+    .zlaqa-logo-wrap {
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    .zlaqa-copy > p:not(.eyebrow) {
+        font-size: 14px;
+    }
+
+}
+
+/* =====================================
+   THE FUEC CONTACT FORM
+===================================== */
+
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 7%;
+}
+
+.contact-intro {
+  max-width: 800px;
+  margin-bottom: 65px;
+}
+
+.contact-intro h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.contact-intro h1 em {
+  color: #c6a56b;
+}
+
+.contact-intro > p:last-child {
+  max-width: 650px;
+  line-height: 1.8;
+  color: #b7b3aa;
+}
+
+.contact-form-wrap {
+  max-width: 850px;
+  padding: 45px;
+  border: 1px solid rgba(198, 165, 107, 0.3);
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.035),
+    rgba(255,255,255,0.008)
+  );
+}
+
+.contact-form-heading {
+  margin-bottom: 35px;
+}
+
+.contact-form-heading h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 12px 0;
+}
+
+.contact-form-heading > p:last-child {
+  color: #aaa69e;
+  line-height: 1.7;
+}
+
+.fuec-contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field-full,
+.form-submit-area {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  color: #e9e5dc;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-field label span {
+  color: #c6a56b;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 16px;
+  background: #111;
+  color: #f2eee6;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 2px;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  transition: border-color 0.25s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: #c6a56b;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #77736d;
+}
+
+.form-field select {
+  color-scheme: dark;
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-submit-area {
+  margin-top: 8px;
+}
+
+.form-submit-area button {
+  padding: 15px 28px;
+  background: #c6a56b;
+  color: #111;
+  border: 1px solid #c6a56b;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.form-submit-area button:hover {
+  background: transparent;
+  color: #c6a56b;
+}
+
+.form-submit-area button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.form-submit-area button span {
+  margin-left: 12px;
+}
+
+.form-status {
+  margin-top: 18px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form-status.success {
+  color: #8ecb9b;
+}
+
+.form-status.error {
+  color: #e58b82;
+}
+
+.contact-email {
+  margin-top: 45px;
+  color: #aaa69e;
+}
+
+.contact-email a {
+  color: #c6a56b;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .contact-page {
+    padding: 70px 6%;
+  }
+
+  .contact-form-wrap {
+    padding: 25px 20px;
+  }
+
+  .fuec-contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-field-full,
+  .form-submit-area {
+    grid-column: auto;
+  }
+
+  .contact-form-heading h2 {
+    font-size: 27px;
+  }
+}

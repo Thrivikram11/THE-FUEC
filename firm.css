@@ -1,0 +1,162 @@
+/* ==========================================================
+   FUTURECONMY — THE FIRM SECTION
+   Premium editorial styling. Loaded after the existing style.css.
+   Replace the image URLs below with approved company photographs
+   when they are supplied.
+   ========================================================== */
+
+:root {
+    --firm-ink: #171916;
+    --firm-muted: #6f716b;
+    --firm-paper: #f5f4ef;
+    --firm-white: #fffefa;
+    --firm-line: rgba(23, 25, 22, .16);
+    --firm-accent: #a88a5b;
+}
+
+html { scroll-behavior: smooth; }
+.firm-hero, .firm-intro-section, .firm-pillars, .firm-approach-section,
+.firm-purpose-section, .firm-team-section { box-sizing: border-box; }
+.firm-hero *, .firm-intro-section *, .firm-pillars *, .firm-approach-section *,
+.firm-purpose-section *, .firm-team-section * { box-sizing: border-box; }
+
+.firm-hero {
+    position: relative;
+    min-height: min(760px, 88vh);
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(360px, .98fr);
+    align-items: stretch;
+    overflow: hidden;
+    padding: clamp(58px, 8vw, 118px) clamp(24px, 7.5vw, 112px);
+    background: var(--firm-paper);
+    color: var(--firm-ink);
+}
+.firm-hero-copy { position: relative; z-index: 2; align-self: center; max-width: 650px; padding: 20px 5vw 20px 0; }
+.firm-hero .eyebrow, .firm-intro-section .eyebrow, .firm-pillars .eyebrow,
+.firm-approach-section .eyebrow, .firm-purpose-section .eyebrow,
+.firm-team-section .eyebrow {
+    margin: 0 0 22px;
+    color: var(--firm-accent);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .19em;
+    line-height: 1.5;
+}
+.firm-hero h1 {
+    margin: 0;
+    color: var(--firm-ink);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(52px, 7.3vw, 104px);
+    font-weight: 400;
+    letter-spacing: -.055em;
+    line-height: .99;
+}
+.firm-hero h1 em, .firm-intro-section h2 em, .firm-pillars h2 em,
+.firm-approach-section h2 em, .firm-purpose-section h2 em,
+.firm-team-section h2 em { color: var(--firm-accent); font-weight: 400; }
+.firm-hero-intro { max-width: 470px; margin: 30px 0 0; color: #555850; font-size: clamp(15px, 1.25vw, 18px); line-height: 1.85; }
+.firm-hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 26px; margin-top: 34px; }
+.firm-button { display: inline-flex; align-items: center; gap: 22px; min-height: 52px; padding: 0 23px; text-decoration: none; font-size: 12px; letter-spacing: .04em; transition: transform .2s ease, background .2s ease; }
+.firm-button:hover { transform: translateY(-2px); }
+.firm-button-primary { background: var(--firm-ink); color: white; }
+.firm-button-primary:hover { background: #343a31; }
+.firm-text-link { color: var(--firm-ink); text-decoration: none; font-size: 12px; border-bottom: 1px solid var(--firm-accent); padding: 0 0 7px; }
+.firm-hero-note { display: flex; align-items: center; gap: 12px; margin-top: 64px; color: #777970; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; }
+.firm-note-line { width: 34px; height: 1px; background: var(--firm-accent); }
+.firm-hero-media {
+    position: relative;
+    min-height: 500px;
+    background:
+      linear-gradient(180deg, rgba(10,14,11,.02) 35%, rgba(10,14,11,.48) 100%),
+      url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=85") center/cover;
+}
+.firm-image-caption { position: absolute; right: 28px; bottom: 25px; left: 28px; display: flex; justify-content: space-between; gap: 16px; color: white; font-size: 9px; letter-spacing: .15em; text-transform: uppercase; }
+.firm-hero-index { position: absolute; right: 22px; top: 50%; color: rgba(23,25,22,.35); font-size: 9px; letter-spacing: .18em; writing-mode: vertical-rl; }
+
+.firm-intro-section { padding: clamp(72px, 10vw, 145px) clamp(24px, 10vw, 150px); background: var(--firm-white); color: var(--firm-ink); }
+.firm-section-kicker { display: flex; align-items: center; gap: 18px; color: var(--firm-accent); font-size: 9px; font-weight: 700; letter-spacing: .18em; }
+.firm-section-kicker span:first-child { color: var(--firm-ink); }
+.firm-intro-grid { display: grid; grid-template-columns: 1fr .78fr; gap: clamp(40px, 9vw, 135px); margin-top: 58px; }
+.firm-intro-section h2, .firm-pillars h2, .firm-approach-section h2,
+.firm-purpose-section h2, .firm-team-section h2 {
+    margin: 0;
+    color: var(--firm-ink);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(37px, 5vw, 66px);
+    font-weight: 400;
+    letter-spacing: -.035em;
+    line-height: 1.12;
+}
+.firm-intro-body { padding-top: 6px; color: var(--firm-muted); font-size: 14px; line-height: 1.9; }
+.firm-intro-body p { margin: 0 0 19px; }
+.firm-intro-body .firm-lead { color: #30332e; font-family: "Playfair Display", Georgia, serif; font-size: 21px; line-height: 1.55; }
+
+.firm-pillars { display: grid; grid-template-columns: .9fr 1.1fr; min-height: 650px; background: #20251f; color: white; }
+.firm-pillar-image { min-height: 540px; background: url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=85") center/cover; }
+.firm-pillar-content { align-self: center; padding: clamp(48px, 7vw, 100px); }
+.firm-pillars h2 { color: white; margin-bottom: 44px; }
+.firm-pillar-list article { display: grid; grid-template-columns: 34px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid rgba(255,255,255,.2); }
+.firm-pillar-list article > span { color: var(--firm-accent); font-size: 10px; letter-spacing: .1em; }
+.firm-pillar-list h3 { margin: 0 0 8px; color: white; font-size: 15px; font-weight: 500; }
+.firm-pillar-list p { max-width: 440px; margin: 0; color: #c2c7bd; font-size: 12px; line-height: 1.8; }
+
+.firm-approach-section { padding: clamp(75px, 10vw, 145px) clamp(24px, 10vw, 150px); background: var(--firm-paper); color: var(--firm-ink); }
+.firm-approach-heading { max-width: 720px; margin: 55px auto 70px; text-align: center; }
+.firm-approach-heading > p:last-child { max-width: 520px; margin: 24px auto 0; color: var(--firm-muted); font-size: 14px; line-height: 1.8; }
+.firm-process-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--firm-line); border-bottom: 1px solid var(--firm-line); }
+.firm-process-grid article { min-height: 210px; padding: 27px 24px 25px 0; }
+.firm-process-grid article + article { border-left: 1px solid var(--firm-line); padding-left: 24px; }
+.firm-process-grid article > span { color: var(--firm-accent); font-size: 10px; letter-spacing: .14em; }
+.firm-process-grid h3 { margin: 39px 0 10px; color: var(--firm-ink); font-family: "Playfair Display", Georgia, serif; font-size: 25px; font-weight: 400; }
+.firm-process-grid p { max-width: 220px; margin: 0; color: var(--firm-muted); font-size: 12px; line-height: 1.8; }
+
+.firm-purpose-section { display: grid; grid-template-columns: .8fr 1.2fr; background: #e9e7df; color: var(--firm-ink); }
+.firm-purpose-image { min-height: 560px; background: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1300&q=85") center/cover; }
+.firm-purpose-copy { align-self: center; padding: clamp(48px, 7vw, 100px); }
+.firm-purpose-section h2 { max-width: 650px; }
+.firm-purpose-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 52px; }
+.firm-purpose-columns span { color: var(--firm-accent); font-size: 9px; font-weight: 700; letter-spacing: .16em; }
+.firm-purpose-columns p { margin: 14px 0 0; color: #62645d; font-size: 12px; line-height: 1.9; }
+
+.firm-team-section { padding: clamp(75px, 10vw, 145px) clamp(24px, 10vw, 150px); background: var(--firm-white); }
+.firm-team-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin: 55px 0 48px; }
+.firm-team-heading > p { max-width: 330px; margin: 0 0 7px; color: var(--firm-muted); font-size: 13px; line-height: 1.85; }
+.firm-team-placeholder { display: flex; align-items: center; gap: 28px; padding: 34px; border: 1px solid var(--firm-line); background: #faf9f5; }
+.firm-team-placeholder-mark { display: grid; place-items: center; flex: 0 0 76px; width: 76px; height: 76px; background: #242a23; color: #d0b78d; font-family: "Playfair Display", Georgia, serif; font-size: 40px; }
+.firm-team-placeholder h3 { margin: 0 0 8px; color: var(--firm-ink); font-family: "Playfair Display", Georgia, serif; font-size: 23px; font-weight: 400; }
+.firm-team-placeholder p { margin: 0; color: var(--firm-muted); font-size: 12px; line-height: 1.7; }
+
+@media (max-width: 900px) {
+    .firm-hero { grid-template-columns: 1fr; padding-top: 70px; }
+    .firm-hero-copy { padding: 0 0 45px; }
+    .firm-hero-media { min-height: 430px; }
+    .firm-hero-index { display: none; }
+    .firm-intro-grid, .firm-pillars, .firm-purpose-section { grid-template-columns: 1fr; }
+    .firm-pillar-image, .firm-purpose-image { min-height: 380px; }
+    .firm-process-grid { grid-template-columns: repeat(2, 1fr); }
+    .firm-process-grid article:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--firm-line); }
+    .firm-process-grid article:nth-child(4) { border-top: 1px solid var(--firm-line); }
+}
+@media (max-width: 600px) {
+    .firm-hero { padding: 58px 22px 30px; }
+    .firm-hero h1 { font-size: clamp(48px, 14vw, 72px); }
+    .firm-hero-media { min-height: 330px; }
+    .firm-hero-note { margin-top: 42px; font-size: 8px; }
+    .firm-intro-section, .firm-approach-section, .firm-team-section { padding: 72px 23px; }
+    .firm-intro-grid { gap: 28px; margin-top: 38px; }
+    .firm-intro-section h2, .firm-pillars h2, .firm-approach-section h2,
+    .firm-purpose-section h2, .firm-team-section h2 { font-size: 39px; }
+    .firm-pillar-content, .firm-purpose-copy { padding: 55px 24px; }
+    .firm-pillar-image, .firm-purpose-image { min-height: 300px; }
+    .firm-process-grid { grid-template-columns: 1fr 1fr; }
+    .firm-process-grid article { min-height: 190px; padding-right: 12px; }
+    .firm-process-grid article + article { padding-left: 14px; }
+    .firm-process-grid article:nth-child(3) { padding-left: 0; }
+    .firm-process-grid h3 { margin-top: 28px; font-size: 21px; }
+    .firm-purpose-columns { grid-template-columns: 1fr; gap: 24px; margin-top: 34px; }
+    .firm-team-heading { display: block; margin: 38px 0 30px; }
+    .firm-team-heading > p { margin-top: 22px; }
+    .firm-team-placeholder { align-items: flex-start; padding: 22px; gap: 17px; }
+    .firm-team-placeholder-mark { flex-basis: 54px; width: 54px; height: 54px; font-size: 30px; }
+    .firm-team-placeholder h3 { font-size: 20px; }
+}
